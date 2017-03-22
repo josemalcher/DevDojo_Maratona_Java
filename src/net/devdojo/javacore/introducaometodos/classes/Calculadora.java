@@ -22,7 +22,17 @@ public class Calculadora {
     }
 
     public double diviteDoisNUmero(double num1, double num2){
-        return num1 / num2;
+        if( num2 != 0 )
+            return num1 / num2;
+        return 0;
+    }
+
+    public void imprimeDoisNUmeroDivididos(double num1, double num2){
+        if(num2 != 0){
+            System.out.println(num1 / num2);
+            return; //somente com métodos void -
+        }
+        System.out.println("Não é possível dividir por zero");
     }
 
 

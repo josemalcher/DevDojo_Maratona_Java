@@ -25,7 +25,9 @@ public class CalculadoraTest {
         System.out.println("----");
         System.out.println(calc.diviteDoisNUmero( 20 , 2));
 
+        System.out.println("----");
 
+        calc.imprimeDoisNUmeroDivididos(20,5);
 
     }
 }
