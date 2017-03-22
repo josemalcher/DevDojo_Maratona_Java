@@ -1,7 +1,8 @@
 package aula18Arrays;
 
 /**
- * Created by josemalcher on 21/03/2017.
+ * Criado por José Stélio Malcher Junior em 21/03/2017.
+ * www.josemalcher.net
  */
 public class Arrays1 {
     public static void main(String[] args) {
