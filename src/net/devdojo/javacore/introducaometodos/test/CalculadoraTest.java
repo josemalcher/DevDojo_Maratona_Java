@@ -18,5 +18,11 @@ public class CalculadoraTest {
         calc.somaDoisNumero();
         System.out.println("---");
         calc.subtraiDoisNumeros();
+
+        System.out.println("----");
+
+        calc.multiplicaDoisNUmeros(5,5);
+
+
     }
 }
