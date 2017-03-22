@@ -22,6 +22,9 @@ public class CalculadoraTest {
         System.out.println("----");
 
         calc.multiplicaDoisNUmeros(5,5);
+        System.out.println("----");
+        System.out.println(calc.diviteDoisNUmero( 20 , 2));
+
 
 
     }

@@ -21,5 +21,9 @@ public class Calculadora {
         System.out.println(num1 * num2);
     }
 
+    public double diviteDoisNUmero(double num1, double num2){
+        return num1 / num2;
+    }
+
 
 }
