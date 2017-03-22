@@ -1,4 +1,4 @@
-package net.devdojo.javacore.introducaoclasses;
+package net.devdojo.javacore.introducaoclasses.classes;
 
 /**
  * Criado por José Stélio Malcher Junior em 22/03/2017.
