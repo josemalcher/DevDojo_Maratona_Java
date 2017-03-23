@@ -14,6 +14,7 @@ public class Estudante {
     private String nome;
     private int idade;
     private double[] notas;
+    private boolean aprovado;
 
     public String getNome() {
         return nome;
@@ -43,6 +44,14 @@ public class Estudante {
         this.notas = notas;
     }
 
+    public boolean isAprovado() {
+        return aprovado;
+    }
+
+/*    public void setAprovado(boolean aprovado) {
+        this.aprovado = aprovado;
+    }*/
+
     public void print(){
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: "+ this.idade);
@@ -56,7 +65,7 @@ public class Estudante {
     }
 
     public void tirarMedia(){
-       if(notas == null){
+       if(this.notas == null){
            System.out.println("Aluno não possui notas");
            return;
        }
@@ -66,11 +75,13 @@ public class Estudante {
         for(double nota: notas){
             media += nota;
         }
-        media = media / notas.length;
+        media = media / this.notas.length;
 
         if(media > 6){
+            this.aprovado = true;
             System.out.println("Aprovado");
         }else{
+            this.aprovado = false;
             System.out.println("REPROVADO");
         }
     }

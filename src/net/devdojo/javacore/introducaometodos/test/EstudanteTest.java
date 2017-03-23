@@ -21,6 +21,7 @@ public class EstudanteTest   {
         aluno1.print();
         System.out.println("");
         aluno1.tirarMedia();
+        System.out.println("Aprovado??? = " + aluno1.isAprovado());
 
     }
 }
