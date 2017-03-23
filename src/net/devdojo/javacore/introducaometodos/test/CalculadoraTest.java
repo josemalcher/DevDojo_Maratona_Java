@@ -12,6 +12,7 @@ import net.devdojo.javacore.introducaometodos.classes.Calculadora;
  *
  */
 public class CalculadoraTest {
+    //public static void main(String... args) {
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
@@ -28,6 +29,13 @@ public class CalculadoraTest {
         System.out.println("----");
 
         calc.imprimeDoisNUmeroDivididos(20,5);
+
+        System.out.println("Soma dos arrays");
+        int[] numeros = {1,2,3,4,5};
+        calc.somaArray(numeros);
+
+        System.out.println("Soma por varargs");
+        calc.somaVarArgs(1,2,3,4,5);
 
     }
 }
