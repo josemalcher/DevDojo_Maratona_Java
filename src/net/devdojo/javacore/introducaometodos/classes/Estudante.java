@@ -11,9 +11,37 @@ package net.devdojo.javacore.introducaometodos.classes;
  */
 public class Estudante {
 
-    public String nome;
-    public int idade;
-    public double[] notas;
+    private String nome;
+    private int idade;
+    private double[] notas;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        if(idade < 0){
+            System.out.println("Não pode atribuir zero na idade");
+            return;
+        }
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double[] getNotas() {
+        return notas;
+    }
+
+    public void setNotas(double[] notas) {
+        this.notas = notas;
+    }
 
     public void print(){
         System.out.println("Nome: " + this.nome);

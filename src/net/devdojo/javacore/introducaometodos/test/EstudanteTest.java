@@ -14,9 +14,9 @@ import net.devdojo.javacore.introducaometodos.classes.Estudante;
 public class EstudanteTest   {
     public static void main(String[] args) {
         Estudante aluno1 = new Estudante();
-        aluno1.nome = "Jose Malcher";
-        aluno1.idade = 32;
-       // aluno1.notas = new double[]{5,4,4};
+        aluno1.setNome("José Malcher");
+        aluno1.setIdade(32);
+        aluno1.setNotas(new double[]{3,4,3,9.5});
 
         aluno1.print();
         System.out.println("");
