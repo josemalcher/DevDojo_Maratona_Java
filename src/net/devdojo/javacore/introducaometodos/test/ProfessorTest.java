@@ -18,6 +18,13 @@ public class ProfessorTest {
         professor1.rg = "123123";
         professor1.cpf =  "123.123.123-12";
 
-        professor1.imprime(professor1);
+        Professor professor2 = new Professor();
+        professor2.nome = "Maria";
+        professor2.matricula = "99999";
+        professor2.rg = "777777";
+        professor2.cpf =  "333.222.888-12";
+
+        professor1.imprime();
+        professor2.imprime();
     }
 }

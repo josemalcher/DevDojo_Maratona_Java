@@ -15,11 +15,11 @@ public class Professor {
     public String rg;
     public String cpf;
 
-    public void imprime(Professor prof){
-        System.out.println("Nome: "+prof.nome);
-        System.out.println("Matricula: "+prof.matricula);
-        System.out.println("CPF: "+prof.cpf);
-        System.out.println("RG: "+prof.rg);
+    public void imprime(){
+        System.out.println("Nome: "+this.nome);
+        System.out.println("Matricula: "+this.matricula);
+        System.out.println("CPF: "+this.cpf);
+        System.out.println("RG: "+this.rg);
     }
 
 }
