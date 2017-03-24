@@ -20,8 +20,11 @@ public class FuncionarioTest {
         funcionario01.setSalario(45000);
         */
         Funcionario funcionario01 = new Funcionario();
-        funcionario01.init("José Malcher","123.123.123.55", 4500);
+        //funcionario01.init("José Malcher","123.123.123.55", 4500);
         funcionario01.imprime();
+
+        Funcionario funcionario02 = new Funcionario("José Malcher","123.123.123.55", 4500,"44578");
+        funcionario02.imprime();
 
     }
 }

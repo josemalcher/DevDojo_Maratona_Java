@@ -47,7 +47,7 @@ public class Funcionario {
         this.rg = rg;
     }
 
-    public void init(String nome, String cpf, double salario) {
+   /* public void init(String nome, String cpf, double salario) {
         this.nome = nome;
         this.cpf = cpf;
         this.salario = salario;
@@ -56,6 +56,16 @@ public class Funcionario {
     public void init(String nome, String cpf, double salario, String rg) {
         init(nome,cpf,salario);
         this.rg = rg;
+    }*/
+
+    public Funcionario(String nome, String cpf, double salario, String rg) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.salario = salario;
+        this.rg = rg;
+    }
+
+    public Funcionario() {
     }
 
     public void imprime(){
