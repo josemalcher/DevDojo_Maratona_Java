@@ -11,7 +11,7 @@ public class Carro {
 
     private String nome;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 240.0;
+    private static double velocidadeLimite = 240.0;
 
     public Carro() {
     }
@@ -45,9 +45,18 @@ public class Carro {
         this.velocidadeLimite = velocidadeLimite;
     }*/
 
+    public static double getVelocidadeLimite() {
+        return velocidadeLimite;
+    }
+
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        //detalhe, não foi usando o this.
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
     /*
-    ***************************************
-     */
+        ***************************************
+         */
     public void imprime(){
         System.out.println("*********************");
         System.out.println("Nome: " + this.nome);

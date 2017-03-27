@@ -24,7 +24,8 @@ public class CarroTest {
         System.out.println("###############################");
 
         //c1.setVelocidadeLimite(220);
-        Carro.velocidadeLimite = 220;
+        //Carro.velocidadeLimite = 220;
+        Carro.setVelocidadeLimite(220); //Usando método estáticos
 
         c1.imprime();
         c2.imprime();
