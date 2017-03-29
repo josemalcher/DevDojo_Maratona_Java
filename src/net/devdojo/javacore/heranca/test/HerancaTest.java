@@ -28,8 +28,8 @@ public class HerancaTest {
         pessoa01.imprime();
         System.out.println("*************************");
 
-        Funcionario func = new Funcionario();
-        func.setNome("Augusto");
+        Funcionario func = new Funcionario("Augusto");
+        //func.setNome("Augusto");
         func.setCpf("32165498788");
         func.setSalario(15000);
         func.setEndereco(ende01);

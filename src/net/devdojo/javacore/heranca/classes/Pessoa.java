@@ -7,10 +7,23 @@ package net.devdojo.javacore.heranca.classes;
  * Curso Java Completo - Aula 50: Herança pt 01
  * https://www.youtube.com/watch?v=rN5IgvISCsQ&list=PL62G310vn6nHrMr1tFLNOYP_c73m6nAzL&index=51
  */
-public class Pessoa {
+public class Pessoa extends Object{
     protected String nome;
     protected String cpf;
     protected Endereco endereco;
+
+    public Pessoa() {
+    }
+
+    public Pessoa(String nome) {
+        super();
+        this.nome = nome;
+    }
+
+    public Pessoa(String nome, String cpf) {
+        this(nome);
+        this.cpf = cpf;
+    }
 
     public String getNome() {
         return nome;
