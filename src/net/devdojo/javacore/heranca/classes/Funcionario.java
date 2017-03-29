@@ -14,6 +14,7 @@ public class Funcionario extends Pessoa {
     public void imprime(){
         super.imprime();
         System.out.println("Salário: "+this.salario);
+        imprimeReciboPagamento();
     }
 
     public double getSalario() {
@@ -22,5 +23,9 @@ public class Funcionario extends Pessoa {
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    public void imprimeReciboPagamento(){
+        System.out.println("Eu "+ super.nome + "Recebi o pagamento de R$" +this.salario );
     }
 }
