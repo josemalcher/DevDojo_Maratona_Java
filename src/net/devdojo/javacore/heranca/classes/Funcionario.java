@@ -10,9 +10,12 @@ package net.devdojo.javacore.heranca.classes;
 public class Funcionario extends Pessoa {
 
     private double salario;
-
+    {
+        System.out.println("Blco de inicialização de funcionario");
+    }
     public Funcionario(String nome) {
         super(nome); //sempre a primeira linha na execução
+        System.out.println("Dentro do construtor de funcionário");
     }
 
     public void imprime(){

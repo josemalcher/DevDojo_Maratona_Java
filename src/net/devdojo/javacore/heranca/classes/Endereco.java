@@ -12,6 +12,13 @@ public class Endereco {
     private String bairro;
 
     public Endereco() {
+        System.out.println("Bloco de inicialização 1");
+    }
+    static {
+        System.out.println("Bloco de inicialização Estatico");
+    }
+    {
+        System.out.println("Bloco de inicialização Estatico");
     }
 
     public Endereco(String rua, String bairro) {

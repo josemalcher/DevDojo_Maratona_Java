@@ -15,8 +15,19 @@ public class Pessoa extends Object{
     public Pessoa() {
     }
 
+    static {
+        System.out.println("Bloco de inicialização Estatico");
+    }
+    {
+        System.out.println("Bloco de inicialização 1");
+    }
+    {
+        System.out.println("Bloco de inicialização pessoa 2");
+    }
+
     public Pessoa(String nome) {
-        super();
+        //super();
+        System.out.println("Dentro do contrutor de pessoa");
         this.nome = nome;
     }
 
