@@ -13,9 +13,9 @@ public class CarroTest {
     public static void main(String[] args) {
         Carro c = new Carro();
         //c.VELOCIDADE_FINAL = 260; //dará erro!
-        System.out.println(c.getComprador());
+/*        System.out.println(c.getComprador());
         c.getComprador().setNome("Kuririn");
-        System.out.println(c.getComprador());
+        System.out.println(c.getComprador());*/
 
         //c.comprador = new Comprador(); // não é possível, somente alterar os valores dentro do objeto
     }
