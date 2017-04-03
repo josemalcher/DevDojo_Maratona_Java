@@ -22,9 +22,9 @@ public class Carro {
                 '}';
     }
 
-    public Comprador getComprador() {
+/*    public Comprador getComprador() {
         return comprador;
-    }
+    }*/
 
     public static double getVelocidadeFinal() {
         return VELOCIDADE_FINAL;
