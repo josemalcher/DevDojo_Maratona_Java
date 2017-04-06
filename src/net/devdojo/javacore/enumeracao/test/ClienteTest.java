@@ -17,6 +17,8 @@ public class ClienteTest {
         //Problema decorre se for lançado no tipo cliente, que é um int, um valor diferente!!
         //Com Enum, é impossível passar outro tipo de valor!
         System.out.println(cliente);
+        System.out.println(TIpoCliente.PESSOA_FISICA.getId());
+        System.out.println(TIpoCliente.PESSOA_JURIDICA.getId());
     }
 
 }

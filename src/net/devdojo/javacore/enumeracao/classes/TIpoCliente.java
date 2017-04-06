@@ -9,13 +9,22 @@ package net.devdojo.javacore.enumeracao.classes;
  *
  */
 public enum TIpoCliente {
-    PESSOA_JURIDICA(1, "Pessoa Juridica"), PESSOA_FISICA(2, "Pessoa Física"); //sempre será a primeira linha
+    PESSOA_JURIDICA(1, "Pessoa Juridica"), PESSOA_FISICA(2, "Pessoa Física"){
+        public String getId(){ // constant specific class body || Corpo de classe especifico constate
+            return "B";
+        }
+    }; //sempre será a primeira linha
 
     private int tipo;
     private String nome;
+
     TIpoCliente(int tipo, String nome) { //sempre são privados
         this.tipo =tipo;
         this.nome = nome;
+    }
+
+    public String getId(){
+        return "A";
     }
 
     public int getTipo() {
