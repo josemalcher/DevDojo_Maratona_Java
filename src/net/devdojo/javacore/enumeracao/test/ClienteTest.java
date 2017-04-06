@@ -13,7 +13,7 @@ import net.devdojo.javacore.enumeracao.classes.TIpoCliente;
 public class ClienteTest {
 
     public static void main(String[] args) {
-        Cliente cliente = new Cliente("Anna", TIpoCliente.PESSOA_FISICA);
+        Cliente cliente = new Cliente("Anna", TIpoCliente.PESSOA_FISICA, Cliente.TipoPagamento.APRAZO);
         //Problema decorre se for lançado no tipo cliente, que é um int, um valor diferente!!
         //Com Enum, é impossível passar outro tipo de valor!
         System.out.println(cliente);

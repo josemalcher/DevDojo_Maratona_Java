@@ -9,5 +9,20 @@ package net.devdojo.javacore.enumeracao.classes;
  *
  */
 public enum TIpoCliente {
-    PESSOA_JURIDICA, PESSOA_FISICA;
+    PESSOA_JURIDICA(1, "Pessoa Juridica"), PESSOA_FISICA(2, "Pessoa Física"); //sempre será a primeira linha
+
+    private int tipo;
+    private String nome;
+    TIpoCliente(int tipo, String nome) { //sempre são privados
+        this.tipo =tipo;
+        this.nome = nome;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
 }
