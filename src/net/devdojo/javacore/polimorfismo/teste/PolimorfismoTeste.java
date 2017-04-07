@@ -23,13 +23,17 @@ public class PolimorfismoTeste {
         //System.out.println("--------------------------");
         //relatorio.relatorioPagamentoVendedor(v);
 
-        relatorio.relatorioPagamentoGenerico(g);
+//        relatorio.relatorioPagamentoGenerico(g);
         System.out.println("-----------------------");
         relatorio.relatorioPagamentoGenerico(v);
-
+        /*
         Funcionario f = g;
         System.out.println("----------");
-        System.out.println(g.getSalario());
+        System.out.println(g.getSalario());*/
+
+        relatorio.relatorioPagamentoGenerico(g);
+
+
     }
 
 

@@ -28,6 +28,15 @@ public class RelatorioPagamento {
         funcionario.calcularPagamento();
         System.out.println("Nome: " + funcionario.getNome());
         System.out.println("Salario desse mes R$ " + funcionario.getSalario());
+        if(funcionario instanceof Gerente){
+            Gerente g = (Gerente) funcionario; //cast
+            System.out.println("Participação nos lucros "+ g.getPnl());
+        }
+        if(funcionario instanceof Vendedor){
+            //Vendedor v =( Vendedor) funcionario;
+            System.out.println("Total de vendas "+ ((Vendedor) funcionario).getTotaoVendas());
+        }
+
     }
 
 
