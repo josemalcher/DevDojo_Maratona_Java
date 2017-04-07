@@ -22,4 +22,9 @@ public class Gerente extends Funcionario {
     public void calculaSalario() {
         this.salario = salario + (salario * 0.2);
     }
+
+    @Override
+    public void imprimeDePessoa() {
+
+    }
 }

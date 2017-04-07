@@ -39,4 +39,9 @@ public class Vendedor extends Funcionario {
     public void calculaSalario() {
         this.salario = salario + (totalVendas * 0.05);
     }
+
+    @Override
+    public void imprimeDePessoa() {
+
+    }
 }

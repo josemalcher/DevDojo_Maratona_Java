@@ -7,9 +7,9 @@ package net.devdojo.javacore.classesabstratas.classes;
  * https://www.youtube.com/watch?v=wCvy9BYZE28&index=61&list=PL62G310vn6nHrMr1tFLNOYP_c73m6nAzL
  *
  */
-public abstract class Funcionario {
+public abstract class Funcionario extends Pessoa {
 
-    protected String nome;
+
     protected String clt;
     protected double salario;
 
@@ -60,5 +60,9 @@ public abstract class Funcionario {
 
     public abstract void calculaSalario();
 
+    @Override
+    public void imprimeDePessoa() {
+        System.out.println("Imprime de FUNCIONARIO");
+    }
 }
 
