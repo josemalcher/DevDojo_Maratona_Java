@@ -1,4 +1,4 @@
-package net.devdojo.javacore.exception.testes;
+package net.devdojo.javacore.exception.error;
 
 /**
  * Criado por José Stélio Malcher Jr. on 07/04/2017.
