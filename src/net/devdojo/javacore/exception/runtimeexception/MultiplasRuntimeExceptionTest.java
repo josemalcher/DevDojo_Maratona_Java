@@ -1,6 +1,7 @@
 package net.devdojo.javacore.exception.runtimeexception;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.SQLDataException;
 
 /**
@@ -15,7 +16,7 @@ public class MultiplasRuntimeExceptionTest {
     public static void main(String[] args) {
 
 
-        try{
+        /*try{
             throw new RuntimeException();
         }catch (ArrayIndexOutOfBoundsException e ){
             System.out.println("Dentro de ArrayIndexOutOfBoundsException");
@@ -25,14 +26,25 @@ public class MultiplasRuntimeExceptionTest {
             System.out.println("Dentro de ArithmeticException");
         }catch (RuntimeException e ){ // mais generico - sempre por ultimo
             System.out.println("Dentro de RuntimeException");
+        }*/
+        try{
+            throw new IndexOutOfBoundsException();
+        }catch (IllegalArgumentException | IndexOutOfBoundsException  | RuntimeException e ){
+            System.out.println("Dentro de ArrayIndexOutOfBoundsException");
         }
         System.out.println("FIal do progama");
 
-        try {
+        /*try {
             telvezLanceException();
         } catch (SQLDataException e) {
             e.printStackTrace();
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }*/
+
+        try {
+            telvezLanceException();
+        } catch (SQLDataException | IOException e) {
             e.printStackTrace();
         }
 
