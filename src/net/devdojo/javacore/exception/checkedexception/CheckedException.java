@@ -12,16 +12,38 @@ import java.io.IOException;
  */
 public class CheckedException {
     public static void main(String[] args) {
-        criarArquivo();
+        /*try {
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+        try {
+            criarArquivo();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public static void criarArquivo(){
-        File file = new File("texto.txt");
+    public static void criarArquivo() throws IOException{
+/*        File file = new File("texto.txt");
         try {
             System.out.println("Arquivo Criado? " + file.createNewFile());
             System.out.println("Arquivo Criado com sucesso!");
         } catch (IOException e) {
             e.printStackTrace();
+        }*/
+
+        /*File file = new File("texto.txt");
+        System.out.println("Arquivo Criado? " + file.createNewFile());
+        System.out.println("Arquivo Criado com sucesso!");*/
+
+        File file = new File("texto.txt");
+        try{
+            System.out.println("Arquivo Criado? " + file.createNewFile());
+            System.out.println("Arquivo Criado com sucesso!");
+        }catch (IOException e){
+            e.printStackTrace();
+            throw e;
         }
     }
 }

@@ -9,7 +9,7 @@ package net.devdojo.javacore.exception.runtimeexception;
  */
 public class RuntimeexceptionTest {
     public static void main(String[] args) {
-
+/*
         int a = 10;
         int b = 0;
         if (b != 0) {
@@ -28,6 +28,21 @@ public class RuntimeexceptionTest {
         }catch (ArrayIndexOutOfBoundsException e){
             e.printStackTrace();
         }
-        System.out.println("Fora do Bloco catch");
+        System.out.println("Fora do Bloco catch");*/
+
+        try {
+            divisao(10, 0);
+        }catch (RuntimeException e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    private static void divisao(int num1, int num2) {
+        if( num2 == 0){
+            throw new IllegalArgumentException("Passe um valor diferente de zero");
+        }
+        int result = num1 / num2;
+        System.out.println(result);
     }
 }
