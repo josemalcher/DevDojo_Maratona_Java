@@ -27,12 +27,13 @@ public class MultiplasRuntimeExceptionTest {
         }catch (RuntimeException e ){ // mais generico - sempre por ultimo
             System.out.println("Dentro de RuntimeException");
         }*/
-        try{
+
+        /*try{ // exemplo de multiplas
             throw new IndexOutOfBoundsException();
-        }catch (IllegalArgumentException | IndexOutOfBoundsException  | RuntimeException e ){
+        }catch (RuntimeException| IllegalArgumentException | IndexOutOfBoundsException e ){
             System.out.println("Dentro de ArrayIndexOutOfBoundsException");
         }
-        System.out.println("FIal do progama");
+        System.out.println("FIal do progama");*/
 
         /*try {
             telvezLanceException();
