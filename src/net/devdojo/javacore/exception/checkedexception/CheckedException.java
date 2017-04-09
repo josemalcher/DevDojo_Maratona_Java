@@ -46,4 +46,16 @@ public class CheckedException {
             throw e;
         }
     }
+
+    public static void abrirArquivo(){
+        try{
+            System.out.println("Abrindo um arquivo");
+            System.out.println("Executando a leitura do arquivo");
+            System.out.println("Escrevendo no arquivo");
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            System.out.println("FECHAR o ARQUIVO!!"); //bloco sempre será executado
+        }
+    }
 }
