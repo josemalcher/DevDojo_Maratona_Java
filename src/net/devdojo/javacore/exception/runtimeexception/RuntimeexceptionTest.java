@@ -20,11 +20,14 @@ public class RuntimeexceptionTest {
         //Object o = null;
         //System.out.println(o.toString());
         //java.lang.NullPointerException
-
-        int[] ar = new int[2];
-        System.out.println(ar[2]);
-        //java.lang.ArrayIndexOutOfBoundsException: 2
-
-
+        try {
+            int[] ar = new int[2];
+            System.out.println(ar[2]);
+            //java.lang.ArrayIndexOutOfBoundsException: 2
+            System.out.println("Imprimindo depois da possível excecao");
+        }catch (ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+        }
+        System.out.println("Fora do Bloco catch");
     }
 }
