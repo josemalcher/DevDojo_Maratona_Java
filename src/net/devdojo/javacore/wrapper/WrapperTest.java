@@ -23,12 +23,25 @@ public class WrapperTest {
         //Wrapper's
         Byte byteWrapper = 1;
         Short shortWrapper = 1;
-        Integer integerWrapper = 1;
+        Integer integerWrapper = new Integer("10");
         Long longWrapper = 10L;
-        Float floatWrapper = 10F;
+        Long longgWrapper = Long.valueOf("10");
+        Float floatWrapper = new Float("10");
         Double doublewrapper = 10D;
-        Character characterWrapper = 'A';
-        Boolean boobleanWrapper = true;
+        Character characterWrapper = new Character('A');
+        Boolean boobleanWrapper = new Boolean("trUE");
+
+        //System.out.println(boobleanWrapper); // true
+
+        String valor = "10";
+        Float f = Float.parseFloat(valor);
+        //System.out.println(f);
+
+        System.out.println(Character.isDigit('9'));
+        System.out.println(Character.isLetter('i'));
+        System.out.println(Character.isLetterOrDigit('#'));
+        System.out.println(Character.toUpperCase('a'));
+        System.out.println(Character.isUpperCase('a'));
 
     }
 }
