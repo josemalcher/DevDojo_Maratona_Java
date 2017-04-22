@@ -12,6 +12,8 @@ import java.util.Locale;
  *
  *
  * Outros
+ *
+ * http://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html
  * https://pt.stackoverflow.com/questions/5390/o-que-%C3%A9-preciso-para-um-sistema-dar-suporte-a-um-locale
  *
  */
