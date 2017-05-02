@@ -38,6 +38,7 @@ public class ExpressoesRegularesTest {
          *  o(v | c)0 = ovo, oco
          *
          *  . - coringa : 1.3 = 123,133,1A3, 1#3. 1 3
+         *  ^ - negação : [^abc]
          *
          */
 
@@ -55,8 +56,10 @@ public class ExpressoesRegularesTest {
         //Validar
         //System.out.println("Email Válido: " + "#@!abra@gmail.com".matches(regex));
 
-        String regex = "\\d{2}/\\d{2}/\\d{2,4}";
-        String texto = "05/10/2014 05/12/17 1/1/1 222/333/2222";
+//        String regex = "\\d{2}/\\d{2}/\\d{2,4}";
+//        String texto = "05/10/2014 05/12/17 1/1/1 222/333/2222";
+        String regex = "proj([^,])*";
+        String texto = "proj1.txt proj2.bkp proj123, traba, arquiv, ";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
