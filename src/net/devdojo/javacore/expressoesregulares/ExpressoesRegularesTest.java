@@ -37,15 +37,26 @@ public class ExpressoesRegularesTest {
          *
          *  o(v | c)0 = ovo, oco
          *
+         *  . - coringa : 1.3 = 123,133,1A3, 1#3. 1 3
+         *
          */
 
         //String regex = "ab";
         //String regex = "\\d";
         //String regex = "[abcABC]";
         //int numeroHex = 0x100F;
-        String regex = "0[xX][0-9afA-F]+(\\s|$)";
+        //String regex = "0[xX][0-9afA-F]+(\\s|$)";
         //String texto = "cafeBARE@#123abcababab";
-        String texto = "12 0x 0x 0xFFABC 0x10G 0x1";
+        //String texto = "12 0x 0x 0xFFABC 0x10G 0x1";
+
+        //String regex = "([a-zA-Z0-9\\._-])+@([a-z-A-Z])+(\\.([a-zA-Z])+)+";
+        //String regex = "([\\w\\.])+@([a-z-A-Z])+(\\.([a-zA-Z])+)+";
+        //String texto = "fulano@hotmail.com, 123Abc@gmail.com, #@!abra@gmail.com, teste@gmail";
+        //Validar
+        //System.out.println("Email Válido: " + "#@!abra@gmail.com".matches(regex));
+
+        String regex = "\\d{2}/\\d{2}/\\d{2,4}";
+        String texto = "05/10/2014 05/12/17 1/1/1 222/333/2222";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
