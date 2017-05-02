@@ -25,13 +25,25 @@ public class ExpressoesRegularesTest {
          *  \w - Caracteres de palavras a-z A-Z digitos e _
          *  \W - tudo que não for caractere de palavra
          *  []
+         *
+         *  Quantificadores
+         *  ? - zero ou uma
+         *  * - zero ou mais
+         *  + - uma ou mais
+         *  {n,m} - de n até m
+         *  () - agrupar
+         *  | - ou
+         *  $ - fim da linha
+         *
+         *  o(v | c)0 = ovo, oco
+         *
          */
 
         //String regex = "ab";
         //String regex = "\\d";
         //String regex = "[abcABC]";
         //int numeroHex = 0x100F;
-        String regex = "0[xX][0-9afA-F]";
+        String regex = "0[xX][0-9afA-F]+(\\s|$)";
         //String texto = "cafeBARE@#123abcababab";
         String texto = "12 0x 0x 0xFFABC 0x10G 0x1";
 
