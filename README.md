@@ -328,7 +328,75 @@
 
 ---
 
-## <a name="parte18"> </a>
+## <a name="parte96">Aula 95: Tokens e Delimitadores com String e Scanner</a>
+
+[Aula 95: Tokens e Delimitadores com String e Scanner](https://www.youtube.com/watch?v=mbD6S4dHObw)
+
+```java
+public class TokenTest {
+    public static void main(String[] args) {
+        String str = "jose, maria, joão, camila, rafaella, jorge";
+        String[] token = str.split(",");
+        // String[] token = str.split("\\d");
+        for (String arr : token){
+            System.out.println(arr.trim());
+        }
+    }
+}
+```
+Scanner
+```java
+public class ScannerTest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner("1 true 100 oi jose");
+        while(scanner.hasNext()){
+            System.out.println(scanner.next());
+        }
+        System.out.println("#######################");
+
+        Scanner scanner2 = new Scanner("1 true 100 oi jose");
+        while(scanner2.hasNext()){
+            if(scanner2.hasNextInt()){
+                int i = scanner2.nextInt();
+                System.out.println("int = "+ i);
+            }else if(scanner2.hasNextBoolean()){
+                boolean b = scanner2.nextBoolean();
+                System.out.println("Tipo = "+ b);
+            }else{
+                System.out.println(scanner2.next());
+            }
+        }
+
+    }
+}
+
+```
+
+14.6 Tokenização de Strings (Deitel Java ed.10)
+
+Ao ler uma frase, sua mente divide-a em tokens — palavras e sinais de pontuação individuais que transmitem o significado para você. Os compiladores também realizam tokenização. Eles dividem instruções em pedaços individuais, como palavras-chave, identificadores, operadores e outros elementos de linguagem de programação. Agora estudaremos o método split da classe String, que divide uma String em seus tokens componentes. Os tokens são separados entre si por delimitadores, em geral caracteres de espaçamento como espaço, tabulação, nova linha e retorno de carro. Outros caracteres também podem ser utilizados como delimitadores para separar tokens. O aplicativo na Figura 14.18 demonstra o método split de String.
+
+Quando o usuário pressiona a tecla Enter, a frase de entrada é armazenada na variável sentence. A linha 17 invoca o método split de String com o argumento String " ", que retorna um array de Strings. O caractere de espaço no argumento String é o delimitador que o método split usa para localizar os tokens em String. Como veremos na próxima seção, o argumento para o método split pode ser uma expressão regular para tokens mais complexos. A linha 19 exibe o comprimento do array tokens — isto é, o número de tokens em sentence. As linhas 21 e 22 geram cada token em uma linha separada.
+
+```java
+public class TokenDeitel {
+    public static void main(String[] args) {
+        //Obtem a frase
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a sentence and press Enter");
+        String setence = scanner.nextLine();
+
+        //processa a frase do usuário
+        String[] tokem = setence.split(" ");
+        System.out.printf("Numero de elementos: %d%nOs tokens são %n", tokem.length);
+        for(String tok : tokem){
+            System.out.println(tok);
+        }
+    }
+}
+```
+
+
 
 [Voltar ao Índice](#indice)
 
