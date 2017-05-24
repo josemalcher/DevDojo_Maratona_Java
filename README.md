@@ -4,7 +4,7 @@
 
 ---
 
-### <a neme="indice">Índice</a>
+### <a name="indice">Índice</a>
 Índice
 
 - [Aula 00: Introdução ao curso](#parte1)
